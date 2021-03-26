@@ -3,7 +3,7 @@
 #include <windows.h>                //负责控制台处理
 #include <conio.h>                  //负责获取方向按键
 
-typedef enum {
+typedef enum _cell_type {
     CELL_NULL = 0,                  //空闲区域
     CELL_WALL,                      //墙
     CELL_PERSON,                    //人站在空闲区域
@@ -13,14 +13,14 @@ typedef enum {
     CELL_BOX_COMPLITE,              //箱子（目标区域）
 }cell_type;
 
-typedef enum {
+typedef enum _move_dir {
     MOVE_W = 0,                     //向上移动
     MOVE_S,                         //向下移动
     MOVE_A,                         //向左移动
     MOVE_D,                         //向右移动
 }move_dir;
 
-typedef struct {
+typedef struct _person_pos {
     char x;                         //人坐标列数
     char y;                         //人坐标行数
 }person_pos;
