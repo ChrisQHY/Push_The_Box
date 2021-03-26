@@ -1,4 +1,4 @@
-﻿//game main function
+﻿//C++版本 简易推箱子
 #include "game.h"
 
 int main()
